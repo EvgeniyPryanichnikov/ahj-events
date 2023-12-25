@@ -3,8 +3,7 @@
 
 [![Build status](https://ci.appveyor.com/api/projects/status/n0ao5st0hxcoso87?svg=true)](https://ci.appveyor.com/project/EvgeniyPryanichnikov/ahj-events)
 
-deployment: //
-
+deployment: https://evgeniypryanichnikov.github.io/ahj-events/
 
 ![](./src/img/GracefulMiniatureBustard-small.gif)
 
