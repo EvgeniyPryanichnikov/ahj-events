@@ -64,7 +64,12 @@ export default class GameController {
 
     if (isGoblin) {
       this.clickCounter.incrementHit();
+      this.resetTimer(); // fix сбрасываем интервал
+      this.showCharacter(); // fix перезапускаем интервал
 
+      const position = createPosition(this.gamePlay.boardSize);
+      this.gamePlay.redrawPositions(position);
+ 
       if (this.clickCounter.getHitCount() >= 10) {
         this.gamePlay.showModalMessage(`You win! Your points are ${this.clickCounter.getHitCount()}`, '127881');
         this.reset();
