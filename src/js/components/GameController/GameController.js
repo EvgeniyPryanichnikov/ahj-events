@@ -69,7 +69,7 @@ export default class GameController {
 
       const position = createPosition(this.gamePlay.boardSize);
       this.gamePlay.redrawPositions(position);
- 
+
       if (this.clickCounter.getHitCount() >= 10) {
         this.gamePlay.showModalMessage(`You win! Your points are ${this.clickCounter.getHitCount()}`, '127881');
         this.reset();
